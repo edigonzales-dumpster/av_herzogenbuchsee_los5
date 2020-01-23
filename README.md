@@ -10,3 +10,17 @@ docker run --rm --name edit-db -p 54321:5432 --hostname primary \
 -e PG_READ_USER=ogc_server -e PG_READ_PASSWORD=ogc_server \
 sogis/oereb-db:latest
 ```
+
+
+```
+java -jar ... ili2pg
+```
+
+
+```
+create table perimeter
+```
+
+```
+insert into geom from text...
+```

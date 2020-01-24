@@ -38,6 +38,15 @@ java -jar /Users/stefan/apps/ili2pg-4.3.2/ili2pg-4.3.2.jar --dbhost localhost --
 --disableValidation \
 --doSchemaImport \
 --import 0979000005.ITF 
+
+
+java -jar /Users/stefan/apps/ili2pg-4.3.2/ili2pg-4.3.2.jar --dbhost localhost --dbport 54321 --dbdatabase edit --dbusr admin --dbpwd admin \
+--dbschema av_herzogenbuchsee --models DM01AVBE11LV95D \
+--defaultSrsCode 2056 --createGeomIdx --createFk --createFkIdx --createEnumTabs \
+--createMetaInfo --createUnique --createNumChecks --nameByTopic \
+--createTidCol \
+--disableValidation \
+--export 0979000005_export.ITF 
 ```
 
 
